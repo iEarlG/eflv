@@ -1,8 +1,9 @@
+import { ModeToggle } from "@/components/ModeToggle";
 
 export const Header = () => {
     return (
         <header>
-            Header
+            <ModeToggle />
         </header>
     );
 }

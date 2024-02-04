@@ -1,9 +1,11 @@
 "use client"
 
-export const ThemeProvider = () => {
+import { ThemeProvider as NextThemesProvider } from "next-themes";
+
+export const ThemeProvider = ({children, ...props}) => {
     return (
-        <div>
-            <h1>ThemeProvider</h1>
-        </div>
-    )
+        <NextThemesProvider {...props}>
+            {children}
+        </NextThemesProvider>  
+    );
 }
